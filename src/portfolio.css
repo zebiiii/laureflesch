@@ -1,0 +1,67 @@
+.portfolio {
+    height: 75vh;
+    width: 100vw - 10rem;
+    padding: 5rem;
+}
+
+.carousel
+{
+    margin: auto;
+}
+
+.carousel .slide img {
+    max-height: 80vh;
+    width: auto!important;  /* change this to whatever you want */
+}
+
+.portfolio-title
+{
+    margin: 0;
+    font-size: 18vw;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    font-style: italic;
+    animation: 3s ease-out opacity;
+}
+
+.background {
+    height: 80vh;
+    width: 100vw - 10rem;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+
+@media (max-width: 480px) {
+    .portfolio-title {
+        top: 70%;
+        font-size: 20vw;
+    }
+
+    .carousel .slide img {
+        max-height: 50vh;  /* change this to whatever you want */
+        width: auto!important;
+    }
+
+    .portfolio {
+        height: 75vh;
+        width: 100vw - 4rem;
+        padding: 2rem;
+    }
+    .carousel .slide img {
+        max-height: auto!important;
+        width: auto!important;  /* change this to whatever you want */
+    }
+}

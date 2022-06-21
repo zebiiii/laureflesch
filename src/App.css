@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Saol Display Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Saol Display Regular'), url('./img/SaolDisplay-Regular.woff') format('woff');
+}
+
+body {
+  font-family: "Saol Display Regular";
+  background: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,82 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-center {
+  display: flex;
+  justify-content: center;
+}
+
+.row-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.row-left-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+.row-oppose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.column {
+  display:flex;
+  flex-direction: column;
+}
+
+.column-center {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-center-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.column-left {
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.column-left-center {
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }

@@ -1,0 +1,41 @@
+.nav {
+    padding: 0 1rem;
+    float: left;
+    width: 20vw;
+    height: 95vh;
+}
+
+.nav-text {
+    color: white;
+    font-size: 4.444vw;
+    margin: 0;
+    text-align: start;
+    transition: transform 0.65s cubic-bezier(0.1, 0.76, 0.4, 0.94);
+    font-style: italic;
+    font-weight: 500;
+}
+
+p.home-text {
+    font-style: normal;
+    font-size: 2.444vw;
+    margin-bottom: 5vh;
+}
+
+.nav-text:not(.home-text):hover {
+    transform: rotateX(50deg);
+}
+
+.home {
+    height: 95vh;
+    overflow: hidden;
+    width: 80vw;
+}
+
+@media (max-width: 480px) {
+    .nav-text {
+        font-size: 15vw;
+    }
+    .home-text {
+        font-size: 10vw!important;
+    }
+  }

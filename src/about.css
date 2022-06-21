@@ -1,0 +1,48 @@
+.about-text {
+    font-size: 3.333vw;
+    color: white;
+    margin: 6rem 0;
+    text-align: center;
+    transition: transform 0.65s cubic-bezier(0.1, 0.76, 0.4, 0.94);
+    font-style: italic;
+    font-weight: 500;
+    width: 50vw;
+    z-index: 2;
+}
+
+.phone
+{
+    margin: 0;
+    font-size: 15vw;
+    color: 	#3b3b3b;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 25%;
+    animation: 2s ease-out 0s 1 opacity;
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-text {
+        font-size: 6.55vw;
+        width: 70vw;
+        margin-bottom: 6vh;
+    }
+
+    .phone {
+        font-size: 15vw;
+        position: static;
+    }
+  }
